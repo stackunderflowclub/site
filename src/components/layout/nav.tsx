@@ -17,10 +17,7 @@ import { usePathname } from 'next/navigation';
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const Items: { name: string; href: string }[] = [
-		{ name: 'Coding', href: '/dev/' },
-		{ name: 'Music', href: '/music/' }
-	];
+	const Items: { name: string; href: string }[] = [];
 
 	const Pathname = usePathname();
 
