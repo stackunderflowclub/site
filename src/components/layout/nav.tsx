@@ -14,35 +14,44 @@ import {
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
+interface NavItem {
+	name: string;
+	href: string;
+}
+
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const Items: { name: string; href: string }[] = [];
+	const Items: NavItem[] = [];
 
 	const Pathname = usePathname();
 
 	return (
 		<Navbar
 			onMenuOpenChange={setIsMenuOpen}
-			className="text-white bg-neutral-700/50"
+			className='text-white bg-neutral-700/50'
 		>
 			<NavbarMenuToggle
 				aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-				className="sm:hidden"
+				className='sm:hidden'
 			/>
 			<NavbarBrand>
-				<Link href="/">
+				<Link
+					href='/'
+					className='flex flex-row gap-2 items-center justify-start'
+				>
 					<Image
-						src="/logo.svg"
-						alt="Logo"
+						src='/logo.svg'
+						alt='Logo'
 						width={40}
 						height={40}
-						className="rounded-lg aspect-square border-black border-2"
+						className='rounded-lg aspect-square border-black border-2'
 						priority
 					/>
+					Stack <em>Under</em>flow Club
 				</Link>
 			</NavbarBrand>
-			<NavbarContent justify="center" className="hidden sm:flex gap-4">
+			<NavbarContent justify='center' className='hidden sm:flex gap-4'>
 				{Items.map(item => (
 					<NavbarItem isActive={Pathname === item.href} key={item.name}>
 						<Link
