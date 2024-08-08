@@ -48,7 +48,7 @@ export default function Nav() {
 						className='rounded-lg aspect-square border-black border-2'
 						priority
 					/>
-					Stack <em>Under</em>flow Club
+					<span>Stack <em>Under</em>flow Club</span>
 				</Link>
 			</NavbarBrand>
 			<NavbarContent justify='center' className='hidden sm:flex gap-4'>
