@@ -11,19 +11,19 @@ const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
 	title: {
-		absolute: 'Akhil Pillai',
-		default: 'Akhil Pillai',
-		template: '%s | Akhil Pillai'
+		absolute: 'Stack Underflow Club',
+		default: 'Stack Underflow Club',
+		template: '%s | SUC'
 	},
-	description: "Akhil's personal website",
+	description: 'A CHS club of coders and AI/ML enthusiasts',
 	openGraph: {
 		type: 'website',
 		locale: 'en-US',
 		url: RootUrl,
-		title: 'Akhil Pillai',
-		description: "Akhil's personal website",
+		title: 'Stack Underflow Club',
+		description: 'A CHS club of coders and AI/ML enthusiasts',
 		countryName: 'United States',
-		siteName: 'Akhil Pillai'
+		siteName: 'Stack Underflow Club'
 	},
 	icons: [`${RootUrl}/logo.svg`]
 };
