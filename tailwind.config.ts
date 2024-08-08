@@ -1,6 +1,7 @@
 import { nextui } from '@nextui-org/theme';
 import type { Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import TailwindTypography from '@tailwindcss/typography';
 
 const config = {
 	darkMode: ['class'],
@@ -80,7 +81,7 @@ const config = {
 			}
 		}
 	},
-	plugins: [nextui()]
+	plugins: [nextui(), TailwindTypography()]
 } satisfies Config;
 
 export default config;
