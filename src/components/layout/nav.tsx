@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from '../misc/link';
+import Link from '../markup/Link';
 import {
 	Navbar,
 	NavbarBrand,
@@ -13,6 +13,7 @@ import {
 } from '@nextui-org/navbar';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { Vollkorn } from '@/lib/fonts';
 
 interface NavItem {
 	name: string;
@@ -29,7 +30,7 @@ export default function Nav() {
 	return (
 		<Navbar
 			onMenuOpenChange={setIsMenuOpen}
-			className='text-white bg-neutral-700/50'
+			className='text-white bg-neutral-900/75'
 		>
 			<NavbarMenuToggle
 				aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -48,7 +49,11 @@ export default function Nav() {
 						className='rounded-lg aspect-square border-black border-2'
 						priority
 					/>
-					<span>Stack <em>Under</em>flow Club</span>
+					<span
+						className={`text-lg lg:text-xl font-semibold ${Vollkorn.className}`}
+					>
+						Stack Underflow Club
+					</span>
 				</Link>
 			</NavbarBrand>
 			<NavbarContent justify='center' className='hidden sm:flex gap-4'>

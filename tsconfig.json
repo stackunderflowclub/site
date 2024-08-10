@@ -28,5 +28,13 @@
 		".next/types/**/*.ts",
 		"next.config.js"
 	],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"mdx": {
+		"checkMdx": true
+	},
+	"plugins": [
+		{
+			"name": "@mdx-js/typescript-plugin"
+		}
+	]
 }

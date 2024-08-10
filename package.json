@@ -31,6 +31,7 @@
 		"react-dom": "^18",
 		"react-scroll": "^1.9.0",
 		"react-snowfall": "^2.1.0",
+		"react-sparkly-text": "^0.0.44",
 		"react-type-animation": "^3.2.0",
 		"remark-gfm": "^4.0.0",
 		"tailwind-merge": "^2.4.0"

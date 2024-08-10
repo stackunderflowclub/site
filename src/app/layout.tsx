@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { NextUIProvider } from '@nextui-org/system';
 import Footer from '@/components/layout/footer';
 import Nav from '@/components/layout/nav';
 import { RootUrl } from '@/lib/constants';
-
-const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
+import { OpenSans } from '@/lib/fonts';
 
 export const metadata: Metadata = {
 	title: {
@@ -39,7 +37,7 @@ export default function RootLayout({
 			<body
 				className={cn(
 					'min-h-screen bg-background font-sans antialiased',
-					fontSans.variable
+					OpenSans.className
 				)}
 			>
 				<NextUIProvider>

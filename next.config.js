@@ -4,9 +4,12 @@ import remarkGfm from 'remark-gfm';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	trailingSlash: true /**
+	trailingSlash: true,
+	pageExtensions: ['ts', 'tsx', 'md', 'mdx'] /**
 		,
-		pageExtensions: ['tsx', 'mdx']
+		experimental: {
+			mdxRs: true
+		}
 	*/
 };
 
@@ -16,5 +19,4 @@ const withMDX = createMDX({
 	}
 });
 
-// Merge MDX config with Next.js config
 export default withMDX(nextConfig);

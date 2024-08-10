@@ -1,7 +1,8 @@
 import { DiscordInviteLink, RootUrl } from '@/lib/constants';
 import GitHubIcon from '../icons/GitHub';
-import Link from '../misc/link';
+import Link from '../markup/Link';
 import DiscordIcon from '../icons/Discord';
+import { Vollkorn } from '@/lib/fonts';
 
 export default function Footer() {
 	return (
@@ -18,11 +19,15 @@ export default function Footer() {
 			</div>
 
 			<p>
-				Website designed and built entirely by Stack Underflow Club.
+				Website designed and built entirely by{' '}
+				<span className={`font-bold ${Vollkorn.className}`}>
+					Stack Underflow Club
+				</span>
+				.
 				<br />
-				&copy; {new Date().getFullYear()}{' '}
+				&copy; 2024-Present{' '}
 				<a href={RootUrl} className='underline underline-offset-2'>
-					Stack <em>Under</em>flow Club
+					Stack Underflow Club
 				</a>
 				. All Rights Reserved.
 			</p>
