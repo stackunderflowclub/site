@@ -29,7 +29,7 @@ export default function Home() {
 					<Sparkles>Welcome to Stack Underflow Club!</Sparkles>
 				</h1>
 			</main>
-			<section className='p-8 py-16 pt-32 bg-5 h-[75vh] text-center bg-black text-lime-400 flex flex-col justify-center items-center gap-2 md:gap-4 lg:gap-8'>
+			<section className='p-8 py-16 pt-32 bg-5 h-[75vh] text-center bg-black text-[#0f0] flex flex-col justify-center items-center gap-2 md:gap-4 lg:gap-8'>
 				<p className='text-2xl md:text-3xl p-8 md:px-16 lg:px-32 xl:px-64'>
 					We are{' '}
 					<TypeAnimation
@@ -45,7 +45,7 @@ export default function Home() {
 							'Stack Underflow Club.'
 						]}
 						cursor={true}
-						className=' text-inherit inline-block pl-1 after:text-red-500 after:font-bold'
+						className=' text-inherit inline-block pl-1 after:text-[#f00] after:font-bold'
 					/>
 				</p>
 			</section>
