@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import NextLink from 'next/link';
 
 export default function Link({
 	href,
@@ -14,12 +14,12 @@ export default function Link({
 	external?: boolean;
 }) {
 	return (
-		<a
+		<NextLink
 			href={href}
-			className={'underline hover: ' + className}
+			className={`underline hover: ${className}`}
 			target={external ? (target ?? '_blank') : undefined}
 		>
 			{children}
-		</a>
+		</NextLink>
 	);
 }

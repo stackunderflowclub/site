@@ -14,6 +14,9 @@ import {
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Vollkorn } from '@/lib/fonts';
+import GitHubIcon from '../icons/GitHub';
+import DiscordIcon from '../icons/Discord';
+import { DiscordInviteLink } from '@/lib/constants';
 
 interface NavItem {
 	name: string;
@@ -67,6 +70,22 @@ export default function Nav() {
 						</Link>
 					</NavbarItem>
 				))}
+			</NavbarContent>
+			<NavbarContent justify='end'>
+				<NavbarItem>
+					<Link
+						external
+						href='https://github.com/stackunderflowclub'
+						className='block'
+					>
+						<GitHubIcon />
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link external href={DiscordInviteLink} className='block'>
+						<DiscordIcon />
+					</Link>
+				</NavbarItem>
 			</NavbarContent>
 			<NavbarMenu>
 				{Items.map(item => (
