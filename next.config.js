@@ -4,12 +4,10 @@ import remarkGfm from 'remark-gfm';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	trailingSlash: true,
-	pageExtensions: [
-		'tsx' /**,
-		'mdx'
+	trailingSlash: true /**
+		,
+		pageExtensions: ['tsx', 'mdx']
 	*/
-	]
 };
 
 const withMDX = createMDX({

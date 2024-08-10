@@ -14,7 +14,7 @@ export default function ScrollLink({
 	className?: string;
 	children: React.ReactNode;
 }) {
-	useEffect(scrollSpy.update);
+	useEffect(() => scrollSpy.update());
 
 	return (
 		<Link to={to} duration={(d: number) => d} className={className}>
