@@ -45,7 +45,7 @@ export default function Nav() {
 					className='flex flex-row gap-2 items-center justify-start'
 				>
 					<Image
-						src='/logo.svg'
+						src='/logo.webp'
 						alt='Logo'
 						width={40}
 						height={40}

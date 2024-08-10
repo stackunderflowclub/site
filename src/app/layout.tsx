@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 		countryName: 'United States',
 		siteName: 'Stack Underflow Club'
 	},
-	icons: [`${RootUrl}/logo.svg`]
+	icons: [`${RootUrl}/logo.webp`]
 };
 
 export default function RootLayout({
