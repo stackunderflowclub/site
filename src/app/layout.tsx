@@ -36,11 +36,18 @@ export default function RootLayout({
 			<head />
 			<body
 				className={cn(
-					'min-h-screen bg-background font-sans antialiased',
+					'bg-background font-sans antialiased',
 					OpenSans.className
 				)}
 			>
-				<NextUIProvider>
+				<NextUIProvider
+					style={{
+						minHeight: '100vh',
+						display: 'flex',
+						flexDirection: 'column',
+						justifyContent: 'stretch'
+					}}
+				>
 					<Nav />
 					{children}
 					<Footer />

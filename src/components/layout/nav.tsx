@@ -33,7 +33,7 @@ export default function Nav() {
 	return (
 		<Navbar
 			onMenuOpenChange={setIsMenuOpen}
-			className='text-white bg-neutral-900/75'
+			className='text-white bg-neutral-900/75 grow-0'
 		>
 			<NavbarMenuToggle
 				aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
