@@ -61,3 +61,50 @@ On Windows, open Powershell or the command prompt and type:
 winget install --id Git.Git -e --source winget
 git clone https://github.com/stackunderflowclub/learn-html.git
 ```
+
+Now, open that folder in your favorite text editor. If you don't have one, I recommend Visual Studio Code. It's free and open-source, and it's available for Windows, MacOS, and Linux. If you're on a Chromebook without Linux support, you can use [the online version of Visual Studio Code](https://vscode.dev/github/stackunderflow/learn-html) (you might need to create a GitHub account in this case).
+
+### A Quick Look
+
+Open the `index.html` file in your text editor. You should see something like this:
+
+```html
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Akhil Pillai" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="This is a template!" />
+		<title>Site Title</title>
+		<link rel="stylesheet" href="index.css" type="text/css" />
+		<link rel="icon" href="icon.png" type="image/png" />
+	</head>
+	<body>
+		This section gets rendered!
+		<!-- ... -->
+	</body>
+</html>
+```
+
+#### Syntax
+
+Let's get some syntax down! First, HTML is a markup language, which means it uses tags to define elements on a page. Tags are enclosed in angle brackets, like this: `<tag>`. Most tags have an opening tag and a closing tag, like this: `<tag>content</tag>`. The content is the text or other elements inside the tag. Some tags are self-closing because they have no inner content, like this: `<tag />`. Tags can also have attributes, which are additional pieces of information that modify the tag's behavior or appearance. Attributes are written inside the opening tag, like this: `<tag attribute="value">`.
+
+#### Anatomy of a Generic HTML Document
+
+Now, let's go line-by-line through this file.
+
+- `<!DOCTYPE html>`: This is the document type declaration. It tells the browser that this is an HTML5 document. This is the latest version of HTML, and it's the one you should use for all new projects.
+- `<html lang="en-us">`: This is the root element of the document. It contains all the other elements. The `lang` attribute specifies the language of the document. In this case, it's English (United States).
+- `<head>`: This is the head element. It contains metadata about the document, such as the title, character set, information read by search engines, and links to stylesheets and scripts.
+- `<meta charset="utf-8" />`: This tag specifies the character encoding for the document. UTF-8 is one the most common character encodings for the web.
+- `<meta name="author" content="Akhil Pillai" />`: This tag specifies the author of the document. You should replace "Akhil Pillai" with your own name!
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`: This tag tells the browser how to control the page's dimensions and scaling. It's important for making your site mobile-friendly.
+- `<meta name="description" content="This is a template!" />`: This tag provides a description of the document. This is often used by search engines to display a snippet of your page in search results.
+- `<title>Site Title</title>`: This tag sets the title of the document. This is displayed as the name of the browser tab.
+- `<link rel="stylesheet" href="index.css" type="text/css" />`: This tag links to an external stylesheet. This is one way to apply styles to your HTML document.
+- `<link rel="icon" href="icon.png" type="image/png" />`: This tag specifies the favicon for the document. This is the small icon that appears in the browser tab.
+- `<body>`: This is the body element. It contains all the content that gets rendered on the page.
+
+*Okay I don't have a plan anymore, let's wing it!*
