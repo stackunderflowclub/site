@@ -7,22 +7,27 @@ import {
 
 export const OpenSans = OS({
 	subsets: ['latin'],
-	variable: '--f-open-sans'
+	variable: '--f-open-sans',
+	display: 'swap',
 });
 
 export const SourceCodePro = SCP({
 	subsets: ['latin'],
 	variable: '--f-source-code-pro',
-	weight: ['200', '300', '400', '500', '600', '700', '800', '900']
+	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+	display: 'swap',
 });
 
 export const Vollkorn = V({
 	subsets: ['latin'],
-	variable: '--f-vollkorn'
+	variable: '--f-vollkorn',
+	weight: ['400', '500', '600', '700', '800', '900'],
+	display: 'swap',
 });
 
 export const VollkornSC = VSC({
 	subsets: ['latin'],
 	variable: '--f-vollkorn-sc',
-	weight: ['400', '600', '700', '900']
+	weight: ['400', '600', '700', '900'],
+	display: 'swap',
 });
