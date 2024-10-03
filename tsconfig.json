@@ -28,7 +28,7 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"next.config.js"
-	],
+, "src/app/meetings/page.mdx"	],
 	"exclude": ["node_modules"],
 	"mdx": {
 		"checkMdx": true
