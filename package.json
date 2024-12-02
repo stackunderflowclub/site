@@ -47,7 +47,7 @@
 	},
 	"devDependencies": {
 		"@types/mdx": "^2.0.13",
-		"@types/node": "^22.7.4",
+		"@types/node": "^22.10.1",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
 		"@types/react-scroll": "^1.8.10",
